@@ -46,6 +46,11 @@ python3 -m pip install aiohttp
 
 pip3 install django
 pip3 install aiohttp
+
+OR
+
+sudo apt install python3-django
+sudo apt-get install python3-aiohttp
 ```
 
 ## My Motives
@@ -104,6 +109,14 @@ python3 manage.py runserver 0.0.0.0:8000
 
 # Create super user for admin web interface.
 python3 manage.py createsuperuser
+```
+
+If you want run this as a service, try this commands.
+
+```bash
+sudo apt install -y npm
+sudo npm install -g pm2
+pm2 start manage.py --interpreter=python3 -- runserver 0.0.0.0:8000
 ```
 
 The web interface should be located at `http://<host/ip>:<port>`. For example.
