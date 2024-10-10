@@ -1,7 +1,4 @@
 # GitHub Follow Bot
-## 11-28-22
-I'm not sure when I'll get around to finishing this tool due to other projects I'm working on. However, I wanted to note that mass following users is against GitHub's TOS (not stated below). Therefore, please use at your own risk!
-
 ## Description
 This is a GitHub Follow Bot made inside of a Django application. Management of the bot is done inside of Django's default admin center (`/admin`). The bot itself runs in the background of the Django application.
 
@@ -53,18 +50,6 @@ sudo apt install python3-django
 sudo apt-get install python3-aiohttp
 ```
 
-## My Motives
-A few months ago, I discovered a few GitHub users following over 100K users who were obviously using bots. At first I was shocked because I thought GitHub was against massive following users, but after reading more into it, it appears they don't mind. This had me thinking what if I started following random users as well. Some of these users had a single GitHub.io project that received a lot of attention and I'd assume it's from all the users they were following. I decided to try this. I wanted to see if it'd help me connect with other developers and it certainly did/has! Personally, I haven't used a bot to achieve this, I was actually going through lists of followers from other accounts and following random users. As you'd expect, this completely cluttered my home page, but it also allowed me to discover new projects which was neat in my opinion.
-
-While this is technically 'spam', the good thing I've noticed is it certainly doesn't impact the user I'm following much other than adding a single line in their home page stating I'm following them (or them receiving an email stating this if they have that on). Though, I could see this becoming annoying if many people/bots started doing it (perhaps GitHub could add a user setting that has a maximum following count of a user who can follow them or receive notifications when the user follows).
-
-I actually think it's neat this is allowed so far because it allows others to discover your projects. Since I have quite a few networking projects on this account, I've had some people reach out who I followed stating they found my projects neat because they aren't into that field.
-
-I also wouldn't support empty profiles made just for the purpose of mass following.
-
-## USE AT YOUR OWN RISK
-Even though it appears GitHub doesn't mind users massive following others (which I again, support), this is still considered a spam tactic. Therefore, please use this tool at your own risk. I'm not even going to be using it myself because I do enjoy manually following users. I made this project to learn more about Python.
-
 ## Settings
 Inside of the web interface, a settings model should be visible. The following settings should be inserted.
 
@@ -95,7 +80,8 @@ Installation should be performed like a regular Django application. This applica
 # Make sure Django and aiohttp are installed for this user.
 
 # Clone repository.
-git clone https://github.com/gamemann/GitHub-Follower-Bot.git
+git clone https://github.com/Keviiiiiiiin/GitHub-Follow-Bot.git
+
 
 # Change directory to Django application.
 cd GitHub-Follower-Bot/src/github_follower
@@ -131,4 +117,4 @@ While you could technically run the Django application's development server for 
 While settings could have been configured on the host itself, I wanted an interface that was easily accessible from anywhere. The best thing for this would be a website in my opinion. Most of my experience is with Django which is why I chose that project.
 
 ## Credits
-* [Christian Deacon](https://github.com/gamemann)
+* [Kevin](https://github.com/Keviiiiiiiin)
